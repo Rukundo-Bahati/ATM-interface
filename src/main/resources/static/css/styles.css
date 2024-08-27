@@ -1,0 +1,79 @@
+body {
+    /* Linear gradient from a deep blue to a lighter blue */
+    background: #1D2339;
+    font-family: Arial, sans-serif; /* Set a clean font */
+    color: #333; /* Set a default text color */
+    margin: 0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height: 100vh;
+    padding: 0;
+}
+
+
+/* Container for centering content */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+}
+
+
+/* Heading styles */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="number"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin: 10px 0; /* Add margin to create space between buttons */
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Error message styling */
+p.error {
+    color: red;
+    text-align: center;
+}
+
+/* Timer styling */
+#timer {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.error, .message {
+    color: red; /* Error message in red */
+    margin: 10px 0;
+}
+
+.message {
+    color: green; /* Success message in green */
+}

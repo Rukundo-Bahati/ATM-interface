@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>ATM Interface</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<div class="container">
+    <h1>ATM Interface</h1>
+    <p>Current Balance: $<span th:text="${balance}"></span></p>
+
+    <form id="depositForm" action="/deposit" method="post">
+        <input type="number" name="amount" step="0.01" min="0" required>
+        <button type="submit">Deposit</button>
+    </form>
+
+    <form id="withdrawForm" action="/withdraw" method="post">
+        <input type="number" name="amount" step="0.01" min="0" required>
+        <button type="submit">Withdraw</button>
+    </form>
+
+    <form id="balanceForm" action="/balance" method="post">
+        <button type="submit">Check Balance</button>
+    </form>
+
+    <div th:if="${error}">
+        <p class="error" th:text="${error}"></p>
+    </div>
+
+    <div th:if="${message}">
+        <p class="message" th:text="${message}"></p>
+    </div>
+</div>
+</body>
+</html>
